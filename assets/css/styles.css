@@ -5,6 +5,13 @@ body{
 	background-color: #fff;
 }
 
+/*icono: barra-menú*/
+header label{
+	cursor: pointer; /* cambia de flecha a manito*/
+	font-size: 20px;
+	display: none; /* Lo desaparece*/
+}
+
 /*Contenedor Flexbox*/
 .flex-container{
 	display: flex;
@@ -15,12 +22,19 @@ body{
 
 }
 
-.menu a{
+.menu li{
 	background-color: #ff8080;
 	display: inline-block;
-	padding: 20px;
+	padding: 15px;
+	border-left: 1px solid black;
+
+}
+.menu ul ul {
+	display: none;
+}
+
+.menu a{
+	display: block;
 	text-decoration: none;
 	color: whitesmoke;
-	border: 0px 2px 0px 2px solid black;
-
 }
